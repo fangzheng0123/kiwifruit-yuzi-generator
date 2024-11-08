@@ -16,7 +16,7 @@ public class MainGenerator {
     public static void main(String[] args) throws TemplateException, IOException {
         MainTemplateConfig mainTemplateConfig = new MainTemplateConfig();
         mainTemplateConfig.setAuthor("fang");
-        mainTemplateConfig.setOutputText("结果输出了呀：");
+        mainTemplateConfig.setOutputText("结果：");
         mainTemplateConfig.setLoop(false);
         doGenerator(mainTemplateConfig);
     }
