@@ -1,2 +1,0 @@
-#!/bin/bash
-java -jar kiwifruit-yuzi-generator-basic/target/kiwifruit-yuzi-generator-basic-1.0-SNAPSHOT-jar-with-dependencies.jar "$@"
