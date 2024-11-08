@@ -38,7 +38,28 @@ public class MainGenerator {
         String replace = meta.getBasePackage().replace(".", "/");
         String outputFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "model/DataModel.java" ;
 
-
         DynamicFileGenerator.doGenerate(inputPath,outputFilePath,meta);
+//        config子命令
+        String inputConfigPath = inputResourcePath  +"template/java/cli/command/ConfigCommand.java.ftl";
+        String outputConfigFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "cli/command/DataModel.java" ;
+        DynamicFileGenerator.doGenerate(inputConfigPath,outputConfigFilePath,meta);
+//        generator
+        String inputGeneratorPath = inputResourcePath  +"template/java/cli/command/GeneratorCommand.java.ftl";
+        String outputGeneratorFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "cli/command/GeneratorCommand.java" ;
+        DynamicFileGenerator.doGenerate(inputGeneratorPath,outputGeneratorFilePath,meta);
+
+//        list
+        String inputListPath = inputResourcePath  +"template/java/cli/command/ListCommand.java.ftl";
+        String outputListFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "cli/command/ListCommand.java" ;
+        DynamicFileGenerator.doGenerate(inputListPath,outputListFilePath,meta);
+//        主命令
+        String inputCommandPath = inputResourcePath  +"template/java/CommandExecutor.java.ftl";
+        String outputCommandFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "CommandExecutor.java" ;
+        DynamicFileGenerator.doGenerate(inputCommandPath,outputCommandFilePath,meta);
+
+//        启动类
+        String inputMainPath = inputResourcePath  +"template/java/Main.java.ftl";
+        String outputMainFilePath =outputPath + File.separator+"src/main/java"+ File.separator + replace + File.separator + "Main.java" ;
+        DynamicFileGenerator.doGenerate(inputMainPath,outputMainFilePath,meta);
     }
 }

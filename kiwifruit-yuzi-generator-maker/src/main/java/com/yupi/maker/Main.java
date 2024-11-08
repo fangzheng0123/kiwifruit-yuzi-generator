@@ -17,9 +17,8 @@ public class Main {
 //        args = new String[]{"list"};
 //        args = new String[]{"--help"};
 
-//        CommandExecutor commandExecutor = new CommandExecutor();
-//        commandExecutor.doExecute(args);
-        Meta metaObject = MetaManager.getMetaObject();
-        System.out.println(metaObject);
+        CommandExecutor commandExecutor = new CommandExecutor();
+        commandExecutor.doExecute(args);
+
     }
 }

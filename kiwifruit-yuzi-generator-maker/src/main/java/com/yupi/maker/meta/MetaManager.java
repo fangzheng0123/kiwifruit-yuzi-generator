@@ -14,7 +14,6 @@ public class MetaManager {
 //        Meta newMeta = JSONUtil.toBean(metaJson, Meta.class);
 //        System.out.println(newMeta);
 //    }
-
     private static volatile Meta meta;
     private MetaManager(){
 
@@ -29,7 +28,6 @@ public class MetaManager {
         }
         return meta;
     }
-
     private static Meta initMeta() {
         String metaJson = ResourceUtil.readUtf8Str("meta.json");
         Meta newMeta = JSONUtil.toBean(metaJson, Meta.class);

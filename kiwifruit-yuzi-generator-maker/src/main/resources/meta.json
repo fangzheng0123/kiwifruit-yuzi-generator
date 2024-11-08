@@ -6,7 +6,7 @@
   "author": "yupi",
   "createTime": "2024/11/8",
   "fileConfig": {
-    "inputRootPath": "/Users/yupi/Code/yuzi-generator/yuzi-generator-demo-projects/acm-template-pro",
+    "inputRootPath": "D:/IDEAProjectSpace/kiwifruit-yuzi-generator/kiwifruit-yuzi-demo-generator/acm-template-pro",
     "outputRootPath": "generated",
     "type": "dir",
     "files": [
